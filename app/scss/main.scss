@@ -1,0 +1,23 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "header";
+// ----------------------------------------------------------
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $text;
+}
+
+a {
+    color: $text;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+// ----------------------------------------------------------
+@import "media"; // Always at the end

@@ -1,0 +1,71 @@
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    &-inner {
+        padding: 10px 0;
+        align-items: center;
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    &__item {
+        padding-right: 42px;
+    }
+    &_dropdown a {
+        font-size: 18px;
+    }
+}
+
+.fa-map-marker-alt {
+    color: $orange;
+    font-size: 24px;
+}
+
+.fa-bars {
+    font-size: 24px;
+    color: $orange;
+}
+
+.dropdown-menu {
+    border: none;
+    .dropdown-item {
+        color: $text;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #FFFFFF;
+    }
+}
+
+.nav-item:not(:last-child) {
+    padding-right: 40px;
+}
+
+.nav-link::before {
+    content: "\2022";
+    color: $orange;
+    padding-right: 8px;
+}
+
+.dropdown-item::before {
+    content: "\2022";
+    color: $orange;
+    padding-right: 8px;
+}
+
+.header-navbar__btn a {
+    background-color: $orange;
+    color: #FFFFFF;
+    border-radius: 47px;
+    padding: 10px 30px;
+    margin-right: 23px;
+}
+
+.header-navbar__lang a:not(:last-child) {
+    padding-right: 5px;
+}
+
+.header-navbar__lang a:hover {
+    border-bottom: 2px solid $orange;
+}
