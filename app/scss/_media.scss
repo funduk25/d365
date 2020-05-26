@@ -4,9 +4,8 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-    .navbar-expand-lg {
-        padding-right: 0;
-        padding-left: 0;
+    .nav-item {
+        padding-right: 5px !important;
     }
 }
 
@@ -35,13 +34,26 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    .navbar-collapse {
-        margin-top: 419px;
+    .header-inner {
+        flex-wrap: nowrap !important;
+    }
+    .header-navbar {
+        width: 15%;
+    }
+    .container {
+        max-width: 100%;
     }
 }
 
 // ≥576px
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(xs) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar-toggler {
+        flex-wrap: nowrap;
+    }
+}
 
 
 /*==========  Mobile First  ==========*/
