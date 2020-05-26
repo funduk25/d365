@@ -54,6 +54,10 @@
     padding-right: 8px;
 }
 
+.navbar-collapse {
+    z-index: 10;
+}
+
 .header-navbar__btn a {
     background-color: $orange;
     color: #FFFFFF;

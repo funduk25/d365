@@ -1,0 +1,28 @@
+.search-form {
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+    #search-form__field {
+        border: 2px solid #FF9900;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 52px;
+        width: 100%;
+    }
+    .search-form__btn {
+        position: absolute;
+        background: #FF9900;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        border: none;
+        right: 0;
+        .fa-search {
+            color: #ffffff;
+        }
+    }
+}
+
+.form-control:focus {
+    border-color: $orange;
+}
