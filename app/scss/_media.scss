@@ -45,6 +45,12 @@
     }
 }
 
+@media screen and (max-width: 765px) {
+    .navbar-collapse {
+        left: 0;
+    }
+}
+
 // ≥576px
 @include media-breakpoint-down(xs) {
     .container {
