@@ -1,0 +1,37 @@
+.sidebar-title {
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    border-bottom: 4px solid $orange;
+    margin-bottom: 50px;
+}
+
+.sidebar-inner {
+    max-width: 263px;
+    height: 456px;
+    .dropdown-toggle::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -15px;
+        border: 7px solid transparent;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-left-width: 7px;
+        border-left: 7px solid #f90;
+    }
+    .dropdown-toggle:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border-radius: 2px;
+    }
+    .sidebar-dropdown {
+        margin-bottom: 32px;
+        .sidebar-dropdown__image {
+            padding-right: 13px;
+        }
+    }
+    .dropdown-menu {
+        width: 50%;
+    }
+}
