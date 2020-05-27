@@ -7,6 +7,9 @@
     .nav-item {
         padding-right: 5px !important;
     }
+    .header-logo__dropdown {
+        width: 80px;
+    }
 }
 
 // ≥992px
@@ -18,17 +21,22 @@
         margin-right: auto;
     }
     .navbar-collapse {
-        position: fixed;
+        position: absolute;
         background: #FFFFFF;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
         padding: 10px;
-        margin-top: 428px;
+        margin-top: 430px;
+        width: 263px;
+        height: auto;
         .header-navbar__btn {
             padding: 98px 0 20px;
         }
         .header-navbar__lang {
-            padding-left: 20%;
+            padding-left: 30%;
         }
+    }
+    .header-navbar__btn {
+        text-align: center;
     }
 }
 
