@@ -22,6 +22,7 @@
     }
     .navbar-collapse {
         position: absolute;
+        left: 0;
         background: #FFFFFF;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
         padding: 10px;
@@ -38,6 +39,9 @@
     .header-navbar__btn {
         text-align: center;
     }
+    .sidebar-slider__inner {
+        margin-left: 0;
+    }
 }
 
 // ≥768px
@@ -50,6 +54,14 @@
     }
     .container {
         max-width: 100%;
+    }
+    .sidebar-slider__dots li {
+        width: 16px;
+        height: 16px;
+    }
+    .sidebar-slider__dots .active {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -66,6 +78,39 @@
     }
     .navbar-toggler {
         flex-wrap: nowrap;
+    }
+    .slider-info {
+        width: 250px;
+        &__btn {
+            margin-left: 10%;
+        }
+    }
+    .slider-info__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .slider-info__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .slider-info {
+        width: 150px;
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+            border-bottom: 3px solid $orange;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__btn {
+            margin-left: 0;
+            font-size: 12px;
+            padding: 10px 12px;
+        }
     }
 }
 

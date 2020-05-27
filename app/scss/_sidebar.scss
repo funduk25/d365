@@ -9,7 +9,7 @@
 .sidebar-inner {
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    max-width: 263px;
+    width: 263px;
     height: 456px;
     .dropdown-toggle::after {
         content: '';
@@ -29,8 +29,11 @@
     }
     .sidebar-dropdown {
         margin-bottom: 32px;
+        width: 245px;
+        cursor: pointer;
         .sidebar-dropdown__image {
             padding-right: 13px;
+            padding-left: 10px;
         }
     }
     .dropdown-menu {
@@ -45,6 +48,84 @@
     }
 }
 
-.sidebar-dropdown {
-    cursor: pointer;
+.sidebar-slider__item {
+    background-image: url(../img/_src/slider.jpg);
+    background-position: center;
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+
+.sidebar-slider__inner {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    margin-left: 30px;
+}
+
+.slider-info {
+    background: linear-gradient(to top right, #811A82, #424C9F);
+    padding: 30px 32px 35px;
+    width: 360px;
+    &__title {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-bottom: 8px solid $orange;
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+    }
+    &__text {
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        line-clamp: 6;
+        box-orient: vertical;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        color: #FFFFFF;
+        background-color: $orange;
+        padding: 12px 24px;
+        border-radius: 47px;
+        margin-left: 25%;
+    }
+}
+
+.sidebar-slider {
+    position: relative;
+    &__dots {
+        position: absolute;
+        bottom: -50px;
+    }
+    &__dot {
+        cursor: pointer;
+    }
+}
+
+.sidebar-slider__dots li {
+    background-color: #BDBDBD;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+    transition: all .2s;
+}
+
+.sidebar-slider__dots .active {
+    background-color: $orange;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.sidebar-slider__dots li:not(:last-child) {
+    margin-right: 15px;
 }
