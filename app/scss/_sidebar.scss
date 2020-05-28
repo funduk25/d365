@@ -49,7 +49,7 @@
 }
 
 .sidebar-slider__item {
-    background-image: url(../img/images/slider.jpg);
+    background-image: url(../img/_src/slider.jpg);
     background-position: center;
     background-size: inherit;
     background-repeat: no-repeat;
@@ -103,6 +103,7 @@
     &__dots {
         position: absolute;
         bottom: -50px;
+        z-index: 1;
     }
     &__dot {
         cursor: pointer;
