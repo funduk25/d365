@@ -49,10 +49,21 @@
 }
 
 .sidebar-slider__item {
-    background-image: url(../img/images/slider.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.slider1 {
+    background-image: url(../img/images/slider1.jpg);
+}
+
+.slider2 {
+    background-image: url(../img/images/slider2.jpg);
+}
+
+.slider3 {
+    background-image: url(../img/images/slider3.jpg);
 }
 
 .sidebar-slider__inner {
