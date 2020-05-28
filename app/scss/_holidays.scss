@@ -1,0 +1,39 @@
+.holidays {
+    margin-top: 70px;
+}
+
+.holidays-inner {
+    text-align: center;
+    &__title {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 4px solid $orange;
+        margin-bottom: 10px;
+    }
+}
+
+.holidays-item {
+    text-align: center;
+    align-items: center;
+    a {
+        display: block;
+    }
+    &:hover {
+        transition: all 0.8s;
+        background-color: rgba(88, 0, 219, 0.3);
+        border-radius: 30px;
+    }
+    &__title {
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 26px 0 60px;
+        margin-bottom: 50px;
+    }
+    &__image {
+        margin-top: 55px;
+    }
+}
